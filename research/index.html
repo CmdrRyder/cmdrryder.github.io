@@ -13,8 +13,8 @@
 <meta property="og:image" content="https://jibutomjose.com/assets/img/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="/assets/fonts/source-serif-4-600.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/space-grotesk-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/ibm-plex-sans-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
@@ -23,23 +23,42 @@
   <a class="brand" href="/">Jibu Tom Jose</a>
   <nav class="nav" aria-label="Main"><a href="/">About</a><a href="/research/" aria-current="page">Research</a><a href="/facilities/">Facilities</a><a href="/software/">Software</a><a href="/publications/">Publications</a><a href="/teaching/">Teaching</a><a href="/assets/cv/JibuTomJose_CV.pdf">CV</a></nav>
 </div></header>
-<main id="main" class="wrap">
+<main id="main"><div class="wrap">
 
 <div class="page-head">
   <h1>Research</h1>
   <p>My work connects three-dimensional flow organization with momentum transport, pressure and hydrodynamic loads. Ongoing work on boiling and bubble-driven convection extends these methods toward interfacial heat and mass transfer.</p>
+  <div class="jump">
+    <a class="pill" href="#moving-bodies">Freely moving bodies</a>
+    <a class="pill" href="#le-dm">Boundary-aware reconstruction</a>
+    <a class="pill" href="#separated-flows">Turbulent separated flows</a>
+    <a class="pill" href="#dynamic-stall">Dynamic stall</a>
+    <a class="pill" href="#shock-flows">Shock-driven flows</a>
+    <a class="pill" href="#interfaces">Liquid&ndash;gas interfaces</a>
+  </div>
 </div>
 
 <section class="topic" id="moving-bodies">
-  <h2>Flow around freely moving bodies</h2>
+  <h2>Freely moving bodies</h2>
+  <div class="cols fig-right">
+    <div>
+      <p>Refractive-index matching makes transparent solids optically invisible, so the flow right next to a moving body can be imaged in three dimensions. I use time-resolved, four-camera tomographic PTV in a sodium-iodide solution to study spheres rising freely under buoyancy.</p>
+      <p>Because the matched spheres cannot be seen directly, a physics-informed detection method locates them from the tracer density, the velocity field and the vortex structures. The measurements resolve vortex shedding and wake evolution together with the sphere motion, and show a change of regime between the larger sphere and the smaller ones.</p>
+      <aside class="keypapers"><h3>Key papers</h3><ul><li><a href="https://doi.org/10.1016/j.ijmultiphaseflow.2025.105597">Refractive index matching for rising spheres</a> <span>Int. J. Multiphase Flow 2026</span></li><li><a href="https://doi.org/10.55037/lxlaser.22nd.29">Tomographic PTV around buoyancy-driven transparent solids</a> <span>Lisbon Symposium 2026</span></li></ul></aside>
+    </div>
+    <figure class=""><img src="/assets/img/fig-sphere-wake-full.webp" alt="Velocity slices and 3D vortex iso-surfaces around a rising sphere" loading="lazy"><figcaption>Wake of a freely rising 11.11 mm sphere: vertical velocity on two planes (top) and 3D iso-surfaces of velocity and Q (bottom). <span class="credit">From <a href="https://doi.org/10.1016/j.ijmultiphaseflow.2025.105597">Jose, Ben-Harosh &amp; Ram, Int. J. Multiphase Flow (2026)</a>.</span></figcaption></figure>
+  </div>
+</section>
+
+<section class="topic" id="le-dm">
+  <h2>Boundary-aware reconstruction</h2>
   <figure class=""><img src="/assets/img/fig-ledm-spheroid.webp" alt="Velocity slices around a tumbling spheroid, CFD on top and LE-DM reconstruction below" loading="lazy"><figcaption>LE-DM validation on a freely rising, tumbling prolate spheroid: CFD reference (top) and LE-DM reconstruction from synthetic particle tracks (bottom), on three planes through the body. <span class="credit">From <a href="https://doi.org/10.1088/1361-6501/aea7c4">Jose et al., Meas. Sci. Technol. (2026)</a>.</span></figcaption></figure>
   <div class="cols">
     <div>
-      <p>Refractive-index matching makes transparent solids optically invisible, so the flow right next to a moving body can be imaged in three dimensions. I use time-resolved, four-camera tomographic PTV in a sodium-iodide solution to study spheres rising freely under buoyancy. A physics-informed detection method locates the invisible spheres, and the measurements link their motion to vortex shedding and wake evolution.</p>
-      <p>Turning scattered particle tracks into gridded velocity fields is weakest right next to the body, where gradients are steepest. I developed <a href="/software/#le-dm">LE-DM</a>, which classifies grid nodes as open fluid, boundary shell or solid at every instant and enforces incompressibility and the body&rsquo;s surface velocity in a single solve. The same formulation handles stationary walls and translating, rotating, multiple or deforming bodies.</p>
-      <p>I also built a five-camera system combining tomographic and PSF-engineered imaging, used to validate a single-camera 3D PIV method based on wavefront shaping and deep learning.</p>
+      <p>Volumetric particle tracking gives scattered Lagrangian tracks that must be reconstructed on a grid before gradients can be computed. When a solid body sits inside the measurement volume, standard reconstructions treat the whole domain as fluid and are weakest right next to the body, where gradients are steepest.</p>
+      <p>I developed <a href="/software/#le-dm">LE-DM</a>, which classifies grid nodes as open fluid, boundary shell or solid at every instant and enforces incompressibility and the body&rsquo;s surface velocity in a single solve. The same formulation handles stationary walls and translating, rotating, multiple or deforming bodies. I also built a five-camera system combining tomographic and PSF-engineered imaging, used to validate a single-camera 3D PIV method based on wavefront shaping and deep learning.</p>
     </div>
-    <aside class="keypapers"><h3>Key papers</h3><ul><li><a href="https://doi.org/10.1088/1361-6501/aea7c4">LE-DM: dynamic masking for moving solids</a> <span>Meas. Sci. Technol. 2026</span></li><li><a href="https://doi.org/10.1016/j.ijmultiphaseflow.2025.105597">Refractive index matching for rising spheres</a> <span>Int. J. Multiphase Flow 2026</span></li><li><a href="https://arxiv.org/abs/2607.29163">Monocular 3D PIV by wavefront shaping</a> <span>arXiv, under review</span></li></ul></aside>
+    <aside class="keypapers"><h3>Key papers</h3><ul><li><a href="https://doi.org/10.1088/1361-6501/aea7c4">LE-DM: dynamic masking for moving solids</a> <span>Meas. Sci. Technol. 2026</span></li><li><a href="https://arxiv.org/abs/2607.29163">Monocular 3D PIV by wavefront shaping</a> <span>arXiv, under review</span></li></ul></aside>
   </div>
 </section>
 
@@ -80,7 +99,7 @@
 
 <section class="topic" id="interfaces">
   <h2>Liquid&ndash;gas interfaces</h2>
-  <div class="cols">
+  <div class="cols fig-right">
     <div>
       <p>Floating particles deform the liquid&ndash;gas interface, which drives capillary attraction and aggregation, the so-called Cheerios effect. With collaborators, we derived a closed-form solution for the interface shape around particles of complex, anisotropic shape.</p>
       <p>To test it, I built a fluorescence-based laser-sheet scanning system with stereo imaging that maps the interface with 0.1 mm precision around 3D-printed circular, polygonal and undulated particles.</p>
@@ -90,7 +109,7 @@
   </div>
 </section>
 
-</main>
+</div></main>
 <footer class="site-footer"><div class="wrap">
   <span>&copy; 2026 Jibu Tom Jose &middot; Faculty of Mechanical Engineering, Technion &ndash; Israel Institute of Technology</span>
   <span><a href="/#contact">Contact</a> &middot; Updated November 2026</span>

@@ -13,8 +13,8 @@
 <meta property="og:image" content="https://jibutomjose.com/assets/img/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="/assets/fonts/source-serif-4-600.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/space-grotesk-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/ibm-plex-sans-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/site.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Jibu Tom Jose", "url": "https://jibutomjose.com", "jobTitle": "Postdoctoral Research Fellow", "affiliation": {"@type": "CollegeOrUniversity", "name": "Technion - Israel Institute of Technology"}, "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Johns Hopkins University"}, {"@type": "CollegeOrUniversity", "name": "Indian Institute of Technology Kanpur"}], "knowsAbout": ["Experimental fluid mechanics", "Particle image velocimetry", "Tomographic PTV", "Refractive index matching", "Turbulence", "Dynamic stall"], "sameAs": ["https://scholar.google.com/citations?user=rcawnL4AAAAJ", "https://orcid.org/0000-0003-2487-5883", "https://www.linkedin.com/in/jibutomjose/", "https://github.com/CmdrRyder"]}</script>
 </head>
@@ -24,48 +24,71 @@
   <a class="brand" href="/">Jibu Tom Jose</a>
   <nav class="nav" aria-label="Main"><a href="/" aria-current="page">About</a><a href="/research/">Research</a><a href="/facilities/">Facilities</a><a href="/software/">Software</a><a href="/publications/">Publications</a><a href="/teaching/">Teaching</a><a href="/assets/cv/JibuTomJose_CV.pdf">CV</a></nav>
 </div></header>
-<main id="main" class="wrap">
+<main id="main"><div class="wrap">
 
 <div class="hero">
   <div>
     <h1>Jibu Tom Jose</h1>
-    <p class="role">Postdoctoral Research Fellow &middot; Transient Fluid Mechanics Laboratory &middot; Technion &ndash; Israel Institute of Technology</p>
+    <p class="role">Postdoctoral Research Fellow<br>Transient Fluid Mechanics Laboratory &middot; Technion, Israel</p>
     <p class="lead">I am an experimental fluid mechanician. I study how unsteady flows and coherent structures interact with solid boundaries, moving bodies and fluid interfaces, using PIV, volumetric particle tracking, refractive-index-matched imaging and pressure reconstruction.</p>
-    <p>I also build the facilities and methods behind these measurements, including <a href="/software/#le-dm">LE-DM</a>, an open-source method for reconstructing velocity fields around moving bodies, and <a href="/software/#uprime">uPrime</a>, an open-source package and desktop app for PIV and CFD analysis. I work with Asst. Prof. Omri Ram at the Technion, and received my Ph.D. from Johns Hopkins University with Prof. Joseph Katz.</p>
-    <p class="links" id="contact">
-      <a href="/assets/cv/JibuTomJose_CV.pdf">CV (PDF)</a>
-      <a href="https://scholar.google.com/citations?user=rcawnL4AAAAJ">Google Scholar</a>
-      <a href="https://orcid.org/0000-0003-2487-5883">ORCID</a>
-      <a href="https://www.linkedin.com/in/jibutomjose/">LinkedIn</a>
-      <a href="https://github.com/CmdrRyder">GitHub</a>
-      <a href="https://www.tfmltechnion.com/people/">Lab</a>
-    </p>
+    <p>I also build the facilities and methods behind these measurements, from a 7 m shock tube to open-source reconstruction software. I work with Asst. Prof. Omri Ram at the Technion, and received my Ph.D. from Johns Hopkins University with Prof. Joseph Katz.</p>
+    <div class="pills" id="contact">
+      <a class="pill solid" href="/assets/cv/JibuTomJose_CV.pdf">CV (PDF)</a>
+      <a class="pill" href="https://scholar.google.com/citations?user=rcawnL4AAAAJ">Google Scholar</a>
+      <a class="pill" href="https://orcid.org/0000-0003-2487-5883">ORCID</a>
+      <a class="pill" href="https://www.linkedin.com/in/jibutomjose/">LinkedIn</a>
+      <a class="pill" href="https://github.com/CmdrRyder">GitHub</a>
+    </div>
   </div>
-  <figure class=""><img src="/assets/img/fac-tomo-ptv.webp" alt="Four high-speed cameras arranged around a tall transparent tank"><figcaption>Time-resolved four-camera tomographic PTV with refractive-index matching, used to study freely rising spheres.</figcaption></figure>
+  <aside class="glance">
+    <h2>AT A GLANCE</h2>
+    <dl>
+      <dt>Ph.D.</dt><dd>Mechanical Engineering, Johns Hopkins University, 2022</dd>
+      <dt>Publications</dt><dd>7 first- or co-first-author journal papers in JFM, PRF, AIAA J., IJMF and MST</dd>
+      <dt>Built</dt><dd>7 m automated shock tube, RIM tomographic PTV, interface scanner, and a 2,000 L RIM water tunnel at JHU</dd>
+      <dt>Software</dt><dd><a href="/software/#le-dm">LE-DM</a> and <a href="/software/#uprime">uPrime</a>, both open source</dd>
+      <dt>Mentoring</dt><dd>Three M.Sc. students and one Ph.D. student</dd>
+    </dl>
+  </aside>
 </div>
-
+</div>
+<div class="ribbon" aria-label="Images from my research"><div class="ribbon-track"><a href="/facilities/#tomo-ptv"><img src="/assets/img/rib-tomo-ptv.webp" alt="Four-camera tomographic PTV" height="190"><span>Four-camera tomographic PTV</span></a><a href="/research/#separated-flows"><img src="/assets/img/rib-ftle.webp" alt="FTLE in a turbulent pipe expansion" height="190"><span>FTLE in a turbulent pipe expansion</span></a><a href="/research/#le-dm"><img src="/assets/img/rib-ledm-flow.webp" alt="LE-DM: flow around a moving sphere" height="190"><span>LE-DM: flow around a moving sphere</span></a><a href="/research/#dynamic-stall"><img src="/assets/img/rib-dcp.webp" alt="Pressure footprint of the dynamic-stall vortex" height="190"><span>Pressure footprint of the dynamic-stall vortex</span></a><a href="/facilities/#shock-tube"><img src="/assets/img/rib-shock-tube.webp" alt="7 m shock tube" height="190"><span>7 m shock tube</span></a><a href="/research/#shock-flows"><img src="/assets/img/rib-schlieren.webp" alt="Shock reflections past an area expansion" height="190"><span>Shock reflections past an area expansion</span></a><a href="/research/#interfaces"><img src="/assets/img/rib-particle.webp" alt="3D-printed particle at a water surface" height="190"><span>3D-printed particle at a water surface</span></a><a href="/research/#separated-flows"><img src="/assets/img/rib-protrusion.webp" alt="Reverse flow over trapezoidal protrusions" height="190"><span>Reverse flow over trapezoidal protrusions</span></a><a href="/facilities/#water-tunnel"><img src="/assets/img/rib-water-tunnel.webp" alt="Recirculating water tunnel" height="190"><span>Recirculating water tunnel</span></a><a href="/research/#interfaces"><img src="/assets/img/rib-interface-scan.webp" alt="Laser scan of a liquid surface" height="190"><span>Laser scan of a liquid surface</span></a><a href="/facilities/#tomo-ptv" aria-hidden="true" tabindex="-1"><img src="/assets/img/rib-tomo-ptv.webp" alt="" height="190"><span>Four-camera tomographic PTV</span></a><a href="/research/#separated-flows" aria-hidden="true" tabindex="-1"><img src="/assets/img/rib-ftle.webp" alt="" height="190"><span>FTLE in a turbulent pipe expansion</span></a><a href="/research/#le-dm" aria-hidden="true" tabindex="-1"><img src="/assets/img/rib-ledm-flow.webp" alt="" height="190"><span>LE-DM: flow around a moving sphere</span></a><a href="/research/#dynamic-stall" aria-hidden="true" tabindex="-1"><img src="/assets/img/rib-dcp.webp" alt="" height="190"><span>Pressure footprint of the dynamic-stall vortex</span></a><a href="/facilities/#shock-tube" aria-hidden="true" tabindex="-1"><img src="/assets/img/rib-shock-tube.webp" alt="" height="190"><span>7 m shock tube</span></a><a href="/research/#shock-flows" aria-hidden="true" tabindex="-1"><img src="/assets/img/rib-schlieren.webp" alt="" height="190"><span>Shock reflections past an area expansion</span></a><a href="/research/#interfaces" aria-hidden="true" tabindex="-1"><img src="/assets/img/rib-particle.webp" alt="" height="190"><span>3D-printed particle at a water surface</span></a><a href="/research/#separated-flows" aria-hidden="true" tabindex="-1"><img src="/assets/img/rib-protrusion.webp" alt="" height="190"><span>Reverse flow over trapezoidal protrusions</span></a><a href="/facilities/#water-tunnel" aria-hidden="true" tabindex="-1"><img src="/assets/img/rib-water-tunnel.webp" alt="" height="190"><span>Recirculating water tunnel</span></a><a href="/research/#interfaces" aria-hidden="true" tabindex="-1"><img src="/assets/img/rib-interface-scan.webp" alt="" height="190"><span>Laser scan of a liquid surface</span></a></div></div>
+<div class="wrap">
 <section>
-  <h2>Research</h2>
-  <div class="themes">
-<a class="theme" href="/research/#moving-bodies"><img src="/assets/img/th-moving-bodies.webp" alt="" loading="lazy"><div><h3>Flow around freely moving bodies</h3><p>Refractive-index-matched tomographic PTV and LE-DM, a reconstruction method that respects moving boundaries.</p></div></a>
-<a class="theme" href="/research/#separated-flows"><img src="/assets/img/th-separated-flows.webp" alt="" loading="lazy"><div><h3>Turbulent separated flows</h3><p>How expansion geometry shapes turbulence and coherent-structure transport in pipes and over protrusions.</p></div></a>
-<a class="theme" href="/research/#dynamic-stall"><img src="/assets/img/th-dynamic-stall.webp" alt="" loading="lazy"><div><h3>Dynamic stall and unsteady loads</h3><p>Flow, pressure and aerodynamic loads on a pitching airfoil from stereo PIV and pressure integration.</p></div></a>
-<a class="theme" href="/research/#shock-flows"><img src="/assets/img/th-shock.webp" alt="" loading="lazy"><div><h3>Shock-driven flows</h3><p>Shock waves expanding through abrupt area changes, studied in a 7 m shock tube I built at the Technion.</p></div></a>
-<a class="theme" href="/research/#interfaces"><img src="/assets/img/th-interfaces.webp" alt="" loading="lazy"><div><h3>Liquid&ndash;gas interfaces</h3><p>Interface deformation around floating particles of complex shape, measured by laser-sheet scanning.</p></div></a>
+  <div class="section-head"><h2>Research</h2><a href="/research/">All research &rarr;</a></div>
+  <div class="tiles">
+<a class="tile" href="/research/#moving-bodies"><div class="img"><img src="/assets/img/tile-moving-bodies.webp" alt="" loading="lazy" width="600" height="400"></div><div class="body"><h3>Freely moving bodies</h3><p>Flow around spheres rising under buoyancy, imaged in 3D through a refractive-index-matched liquid.</p><div class="chips"><span>RIM</span><span>tomo-PTV</span></div><span class="more">Read more &rarr;</span></div></a>
+<a class="tile" href="/research/#le-dm"><div class="img"><img src="/assets/img/tile-ledm.webp" alt="" loading="lazy" width="600" height="400"></div><div class="body"><h3>Boundary-aware reconstruction</h3><p>LE-DM turns scattered particle tracks into velocity fields that respect moving solid boundaries.</p><div class="chips"><span>LE-DM</span><span>open source</span></div><span class="more">Read more &rarr;</span></div></a>
+<a class="tile" href="/research/#separated-flows"><div class="img"><img src="/assets/img/tile-separated-flows.webp" alt="" loading="lazy" width="600" height="400"></div><div class="body"><h3>Turbulent separated flows</h3><p>How expansion geometry shapes turbulence and coherent-structure transport in pipes and over protrusions.</p><div class="chips"><span>stereo PIV</span><span>LCS</span></div><span class="more">Read more &rarr;</span></div></a>
+<a class="tile" href="/research/#dynamic-stall"><div class="img"><img src="/assets/img/tile-dynamic-stall.webp" alt="" loading="lazy" width="600" height="400"></div><div class="body"><h3>Dynamic stall</h3><p>Flow, pressure and aerodynamic loads on a pitching airfoil from stereo PIV and pressure integration.</p><div class="chips"><span>stereo PIV</span><span>pressure</span></div><span class="more">Read more &rarr;</span></div></a>
+<a class="tile" href="/research/#shock-flows"><div class="img"><img src="/assets/img/tile-shock.webp" alt="" loading="lazy" width="600" height="400"></div><div class="body"><h3>Shock-driven flows</h3><p>Shock waves expanding through abrupt area changes, studied in a 7 m shock tube I built.</p><div class="chips"><span>schlieren</span><span>shock tube</span></div><span class="more">Read more &rarr;</span></div></a>
+<a class="tile" href="/research/#interfaces"><div class="img"><img src="/assets/img/tile-interfaces.webp" alt="" loading="lazy" width="600" height="400"></div><div class="body"><h3>Liquid&ndash;gas interfaces</h3><p>Interface deformation around floating particles of complex shape, mapped by laser-sheet scanning.</p><div class="chips"><span>laser scanning</span><span>capillarity</span></div><span class="more">Read more &rarr;</span></div></a>
   </div>
 </section>
 
-<section>
-  <h2>News</h2>
+<section style="padding-top:8px">
+  <div class="section-head"><h2>Software</h2><a href="/software/">Details &rarr;</a></div>
+  <div class="cards">
+    <div class="card"><h3>LE-DM</h3><p class="meta">v1.0 &middot; Python</p>
+      <p>Reconstructs gridded velocity fields from volumetric particle tracks around moving bodies of arbitrary shape, enforcing incompressibility and the body kinematics.</p>
+      <div class="btns"><a class="pill solid" href="https://github.com/TFMLTechnion/LEDM">GitHub</a><a class="pill" href="https://doi.org/10.1088/1361-6501/aea7c4">Paper</a></div></div>
+    <div class="card"><h3>uPrime</h3><p class="meta">v0.9.1 &middot; Python package and desktop app</p>
+      <p>Turbulence analysis of PIV and CFD data: statistics and budgets, spectra, correlations, POD/DMD and vortex identification, with no coding needed.</p>
+      <div class="btns"><a class="pill solid" href="/uPrime/">Website</a><a class="pill" href="https://pypi.org/project/uprime-piv/">PyPI</a></div></div>
+  </div>
+</section>
+
+<section style="padding-top:8px">
+  <div class="section-head"><h2>News</h2><a href="/publications/">Publications &rarr;</a></div>
   <ul class="news">
     <li><span class="d">Nov 2026</span><span>Paper on coherent structure transport in turbulent pipe expansions accepted in <i>Physical Review Fluids</i>.</span></li>
-    <li><span class="d">Sep 2026</span><span>LE-DM paper accepted in <i>Measurement Science and Technology</i>. <a href="/software/#le-dm">Code and data</a></span></li>
+    <li><span class="d">Sep 2026</span><span>LE-DM paper accepted in <i>Measurement Science and Technology</i>, with <a href="/software/#le-dm">code and data</a>.</span></li>
     <li><span class="d">Jul 2026</span><span>Invited talk at the Faculty of Mechanical Engineering, University of Ljubljana.</span></li>
     <li><span class="d">May 2026</span><span>Dynamic stall paper accepted in <i>AIAA Journal</i>.</span></li>
   </ul>
 </section>
 
-</main>
+</div></main>
 <footer class="site-footer"><div class="wrap">
   <span>&copy; 2026 Jibu Tom Jose &middot; Faculty of Mechanical Engineering, Technion &ndash; Israel Institute of Technology</span>
   <span><a href="/#contact">Contact</a> &middot; Updated November 2026</span>

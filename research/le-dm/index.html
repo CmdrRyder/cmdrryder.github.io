@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boundary-aware reconstruction | Jibu Tom Jose</title>
+<meta name="description" content="Boundary-aware reconstruction: research by Jibu Tom Jose. LE-DM turns scattered particle tracks into velocity fields that respect moving solid boundaries.">
+<link rel="canonical" href="https://jibutomjose.com/research/le-dm/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Boundary-aware reconstruction | Jibu Tom Jose">
+<meta property="og:description" content="Boundary-aware reconstruction: research by Jibu Tom Jose. LE-DM turns scattered particle tracks into velocity fields that respect moving solid boundaries.">
+<meta property="og:url" content="https://jibutomjose.com/research/le-dm/">
+<meta property="og:image" content="https://jibutomjose.com/assets/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/space-grotesk-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/ibm-plex-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap">
+  <a class="brand" href="/">Jibu Tom Jose</a>
+  <nav class="nav" aria-label="Main"><a href="/">About</a><a href="/research/" aria-current="page">Research</a><a href="/facilities/">Facilities</a><a href="/software/">Software</a><a href="/publications/">Publications</a><a href="/teaching/">Teaching</a><a href="/assets/cv/JibuTomJose_CV.pdf">CV</a></nav>
+</div></header>
+<main id="main"><div class="wrap">
+
+<div class="topic-page">
+<p class="crumb"><a href="/research/">Research</a> / Boundary-aware reconstruction</p>
+<div class="page-head"><h1>Boundary-aware reconstruction</h1><p>Volumetric particle tracking gives scattered tracks that must be put on a grid before gradients can be computed. When a solid body sits in the measurement volume, standard methods treat everything as fluid and are weakest right next to the body, where it matters most.</p></div>
+<section style="padding-top:24px">
+
+<div class="figs">
+  <figure><img src="/assets/img/fig-ledm-overview.webp" alt="Three panels: particles around a moving sphere, grid nodes classified as solid, shell or fluid, and the reconstructed flow" loading="lazy"><figcaption>LE-DM in three steps: (a) scattered tracks around a moving body, (b) signed-distance classification of grid nodes into solid, boundary shell and fluid, (c) the reconstructed divergence-free field with the shell fixed to the body velocity. <span class="credit">From <a href="https://doi.org/10.1088/1361-6501/aea7c4">Jose et al., Meas. Sci. Technol. (2026)</a>.</span></figcaption></figure>
+</div>
+<div class="cols">
+  <div class="prose">
+    <p>I developed LE-DM (Lagrangian-to-Eulerian reconstruction with Dynamic Masking). At every instant, a time-dependent signed-distance function sorts the grid into open fluid, boundary shell and solid interior. The particle data, incompressibility, the prescribed surface velocity and regularization are then solved together on the masked domain.</p>
+    <p>The method needs only the instantaneous surface geometry and velocity, so stationary walls and translating, rotating, multiple or deforming bodies fit the same formulation. It was tested on an analytical oscillating sphere, synthetic tracks from a CFD rising sphere, a freely rising prolate spheroid that tumbles strongly, and a refractive-index-matched tomographic PTV experiment.</p>
+    <p>I also built a five-camera system combining tomographic and PSF-engineered imaging, used to validate a single-camera 3D PIV method based on wavefront shaping and deep learning.</p>
+  </div>
+  <div class="side">
+    <aside class="keypapers"><h3>Key papers</h3><ul><li><a href="https://doi.org/10.1088/1361-6501/aea7c4">LE-DM: dynamic masking for moving solids</a> <span>Meas. Sci. Technol. 2026</span></li><li><a href="https://arxiv.org/abs/2607.29163">Monocular 3D PIV by wavefront shaping</a> <span>arXiv, under review</span></li></ul></aside>
+    <aside class="related"><h3>Related</h3><a href="https://github.com/TFMLTechnion/LEDM">LE-DM code on GitHub &rarr;</a><a href="https://doi.org/10.5281/zenodo.21965844">Validation dataset &rarr;</a><a href="/software/#le-dm">Software page &rarr;</a></aside>
+  </div>
+</div>
+<div class="figs two">
+  <figure><img src="/assets/img/fig-ledm-spheroid.webp" alt="Velocity slices around a tumbling spheroid, CFD on top and LE-DM below" loading="lazy"><figcaption>Tumbling prolate spheroid: CFD reference (top) and LE-DM reconstruction (bottom) on three planes through the body. <span class="credit">From <a href="https://doi.org/10.1088/1361-6501/aea7c4">Jose et al., Meas. Sci. Technol. (2026)</a>.</span></figcaption></figure>
+  <figure><img src="/assets/img/fig-ledm-experiment.webp" alt="Velocity magnitude around a rising sphere from four reconstruction methods" loading="lazy"><figcaption>Experiment on a freely rising sphere: velocity magnitude from four reconstruction methods, node classification, and the reconstructed surface speed against the measured sphere speed. <span class="credit">From <a href="https://doi.org/10.1088/1361-6501/aea7c4">Jose et al., Meas. Sci. Technol. (2026)</a>.</span></figcaption></figure>
+</div>
+</section>
+<nav class="pager" aria-label="Research topics"><a href="/research/moving-bodies/">&larr; Freely moving bodies</a><a class="next" href="/research/separated-flows/">Turbulent separated flows &rarr;</a></nav>
+</div>
+</div></main>
+<footer class="site-footer"><div class="wrap">
+  <span>&copy; 2026 Jibu Tom Jose &middot; Faculty of Mechanical Engineering, Technion &ndash; Israel Institute of Technology</span>
+  <span><a href="/#contact">Contact</a> &middot; Updated November 2026</span>
+</div></footer>
+</body>
+</html>

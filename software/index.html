@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Software | Jibu Tom Jose</title>
+<meta name="description" content="Open-source software by Jibu Tom Jose: LE-DM for boundary-aware velocity reconstruction and uPrime for PIV and CFD turbulence analysis.">
+<link rel="canonical" href="https://jibutomjose.com/software/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Software | Jibu Tom Jose">
+<meta property="og:description" content="Open-source software by Jibu Tom Jose: LE-DM for boundary-aware velocity reconstruction and uPrime for PIV and CFD turbulence analysis.">
+<meta property="og:url" content="https://jibutomjose.com/software/">
+<meta property="og:image" content="https://jibutomjose.com/assets/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/source-serif-4-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap">
+  <a class="brand" href="/">Jibu Tom Jose</a>
+  <nav class="nav" aria-label="Main"><a href="/">About</a><a href="/research/">Research</a><a href="/facilities/">Facilities</a><a href="/software/" aria-current="page">Software</a><a href="/publications/">Publications</a><a href="/teaching/">Teaching</a><a href="/assets/cv/JibuTomJose_CV.pdf">CV</a></nav>
+</div></header>
+<main id="main" class="wrap">
+
+<div class="page-head">
+  <h1>Software</h1>
+  <p>Open-source tools I develop and maintain for flow measurement and analysis.</p>
+</div>
+<section class="tool" id="le-dm" style="border-top:0">
+  <h2>LE-DM</h2>
+  <p class="meta">v1.0 &middot; Lead developer &middot; Python</p>
+  <p>Lagrangian-to-Eulerian reconstruction with Dynamic Masking. LE-DM converts volumetric particle tracks into gridded velocity fields around moving rigid bodies of arbitrary shape, while enforcing incompressibility and the body kinematics. Because the body mask is updated throughout the reconstruction, the method explicitly accounts for moving boundaries. It is released together with its validation datasets, and a pressure extension (LE-PDM) is in preparation.</p>
+  <div class="btns">
+    <a class="btn primary" href="https://github.com/TFMLTechnion/LEDM">GitHub</a>
+    <a class="btn" href="https://doi.org/10.1088/1361-6501/aea7c4">Paper</a>
+    <a class="btn" href="https://doi.org/10.5281/zenodo.21965844">Validation dataset</a>
+  </div>
+</section>
+<section class="tool" id="uprime">
+  <h2>uPrime</h2>
+  <p class="meta">v0.9.1 &middot; Lead developer and maintainer &middot; Python package and desktop app</p>
+  <p>An installable open-source Python package (<code>uprime-piv</code>) with a reusable <code>uprime.core</code> analysis API and a PyQt6 desktop app for PIV and CFD data. It provides turbulence statistics and budgets, probability distributions, spectra, spatial correlations, POD/DMD, vortex identification and anisotropy analysis. A software paper has been submitted to the <i>Journal of Open Source Software</i>.</p>
+  <div class="btns">
+    <a class="btn primary" href="/uPrime/">Website</a>
+    <a class="btn" href="https://github.com/CmdrRyder/uPrime">GitHub</a>
+    <a class="btn" href="https://pypi.org/project/uprime-piv/">PyPI</a>
+    <a class="btn" href="https://doi.org/10.5281/zenodo.19376184">DOI</a>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer"><div class="wrap">
+  <span>&copy; 2026 Jibu Tom Jose &middot; Faculty of Mechanical Engineering, Technion &ndash; Israel Institute of Technology</span>
+  <span><a href="/#contact">Contact</a> &middot; Updated November 2026</span>
+</div></footer>
+</body>
+</html>

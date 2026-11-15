@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jibutomjose.com/sitemap.xml

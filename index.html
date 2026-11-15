@@ -21,11 +21,13 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="wrap">
-  <a class="brand" href="/">Jibu Tom Jose</a>
+  <a class="brand" href="/"><span>Jibu Tom Jose<small>Experimental fluid mechanics</small></span></a>
   <nav class="nav" aria-label="Main"><a href="/research/">Research</a><a href="/publications/">Publications</a><a href="/about/">About</a><a href="/assets/cv/JibuTomJose_CV.pdf">CV</a></nav>
 </div></header>
 <main id="main"><div class="wrap">
 
+</div>
+<div class="band"><div class="wrap">
 <div class="hero">
   <div>
     <h1>Jibu Tom Jose</h1>
@@ -39,11 +41,19 @@
       
       <a class="pill" href="/about/">About me</a>
     </div>
+    <div class="stats">
+      <div class="stat"><b>7</b><span>first- or co-first-author journal papers</span></div>
+      <div class="stat"><b>5</b><span>facilities and imaging systems built</span></div>
+      <div class="stat"><b>2</b><span>open-source research codes</span></div>
+      <div class="stat"><b>4</b><span>graduate students mentored</span></div>
+    </div>
   </div>
   <div class="board" role="region" aria-roledescription="carousel" aria-label="Research projects"><div class="slides"><a class="slide on" href="/research/le-dm/" data-title="Boundary-aware reconstruction" data-line="LE-DM against CFD around a tumbling spheroid"><img src="/assets/img/fig-ledm-spheroid.webp" alt="LE-DM against CFD around a tumbling spheroid"></a><a class="slide" href="/research/moving-bodies/" data-title="Freely moving bodies" data-line="Four-camera tomographic PTV in a matched-index tank" aria-hidden="true" tabindex="-1"><img src="/assets/img/fac-tomo-ptv.webp" alt="Four-camera tomographic PTV in a matched-index tank" loading="lazy"></a><a class="slide" href="/research/dynamic-stall/" data-title="Dynamic stall" data-line="Vorticity and pressure around a pitching airfoil" aria-hidden="true" tabindex="-1"><img src="/assets/img/fig-dynamic-stall.webp" alt="Vorticity and pressure around a pitching airfoil" loading="lazy"></a><a class="slide" href="/research/shock-flows/" data-title="Shock-driven flows" data-line="A Mach 1.7 shock passing an abrupt expansion" aria-hidden="true" tabindex="-1"><img src="/assets/img/fig-shock-series.webp" alt="A Mach 1.7 shock passing an abrupt expansion" loading="lazy"></a><a class="slide" href="/research/monocular-3d-piv/" data-title="Single-camera 3D PIV" data-line="3D velocity fields from one camera" aria-hidden="true" tabindex="-1"><img src="/assets/img/fig-petpiv-field.webp" alt="3D velocity fields from one camera" loading="lazy"></a><a class="slide" href="/research/pipe-expansions/" data-title="Turbulent pipe expansions" data-line="Mean flow behind a step and a wedge expansion" aria-hidden="true" tabindex="-1"><img src="/assets/img/fig-pipe-mean.webp" alt="Mean flow behind a step and a wedge expansion" loading="lazy"></a><a class="slide" href="/research/protrusions/" data-title="Flow over protrusions" data-line="Reverse flow behind trapezoidal protrusions" aria-hidden="true" tabindex="-1"><img src="/assets/img/fig-protrusion-reverse-flow.webp" alt="Reverse flow behind trapezoidal protrusions" loading="lazy"></a><a class="slide" href="/research/interfaces/" data-title="Liquid–gas interfaces" data-line="3D-printed particles held at a water surface" aria-hidden="true" tabindex="-1"><img src="/assets/img/fig-interface-particles.webp" alt="3D-printed particles held at a water surface" loading="lazy"></a></div><div class="bar"><div class="cap"><a href="/research/le-dm/">Boundary-aware reconstruction</a><p>LE-DM against CFD around a tumbling spheroid</p></div><div class="dots"><button type="button" aria-label="Show Boundary-aware reconstruction" aria-current="true"></button><button type="button" aria-label="Show Freely moving bodies"></button><button type="button" aria-label="Show Dynamic stall"></button><button type="button" aria-label="Show Shock-driven flows"></button><button type="button" aria-label="Show Single-camera 3D PIV"></button><button type="button" aria-label="Show Turbulent pipe expansions"></button><button type="button" aria-label="Show Flow over protrusions"></button><button type="button" aria-label="Show Liquid–gas interfaces"></button></div></div></div>
 </div>
+</div></div>
+<div class="wrap">
 
-<section style="padding-top:20px">
+<section style="padding-top:36px">
   <div class="section-head"><h2>Research</h2></div>
   <div class="tiles four">
 <a class="tile" href="/research/le-dm/"><div class="img"><img src="/assets/img/tiles/le-dm.webp" alt="" loading="lazy" width="600" height="400"></div><div class="body"><h3>Boundary-aware reconstruction</h3><p>LE-DM turns scattered particle tracks into velocity fields that respect moving solid boundaries.</p><div class="chips"><span>LE-DM</span><span>open source</span></div></div></a>
@@ -58,19 +68,37 @@
 </section>
 
 <section style="padding-top:12px">
-  <div class="section-head"><h2>News</h2><a href="/publications/">Publications &rarr;</a></div>
-  <ul class="news">
-    <li><span class="d">Nov 2026</span><span>Paper on coherent structure transport in turbulent pipe expansions accepted in <i>Physical Review Fluids</i>.</span></li>
-    <li><span class="d">Sep 2026</span><span>LE-DM paper accepted in <i>Measurement Science and Technology</i>, with <a href="/software/#le-dm">code and data</a>.</span></li>
-    <li><span class="d">Jul 2026</span><span>Invited talk at the Faculty of Mechanical Engineering, University of Ljubljana.</span></li>
-  </ul>
+  <div class="split">
+    <div>
+      <div class="section-head"><h2>Selected publications</h2><a href="/publications/">All publications &rarr;</a></div>
+      <ul class="sel">
+        <li><a class="t" href="https://doi.org/10.1088/1361-6501/aea7c4">Dynamic masking for boundary-aware velocity reconstruction in volumetric particle tracking with moving solids</a><div class="au">Jose, Jacobson, Shenoy, Frankel &amp; Ram</div><span class="v">Meas. Sci. Technol. 2026</span></li>
+        <li><a class="t" href="https://doi.org/10.2514/1.J066837">Flow, pressure, and aerodynamic loads on an oscillating airfoil undergoing dynamic stall</a><div class="au">Jose, Lu, Agarwal &amp; Katz</div><span class="v">AIAA Journal 2026</span></li>
+        <li><a class="t" href="https://doi.org/10.1103/572s-84gk">Effect of expansion geometry on turbulence in axisymmetric pipe flows</a><div class="au">Jose, Friedmann, Feld &amp; Ram</div><span class="v">Phys. Rev. Fluids 2026</span></li>
+        <li><a class="t" href="https://doi.org/10.1017/jfm.2024.814">The dynamics of shock wave propagation far downstream of an abrupt area expansion</a><div class="au">Gichon*, Jose*, Chandravamsi, Evron &amp; Ram</div><span class="v">J. Fluid Mech. 2024</span></li>
+      </ul>
+    </div>
+    <div>
+      <div class="section-head"><h2>News</h2></div>
+      <ul class="news">
+        <li><span class="d">Nov 2026</span><span>Coherent structure transport paper accepted in <i>Physical Review Fluids</i>.</span></li>
+        <li><span class="d">Sep 2026</span><span>LE-DM paper accepted in <i>Measurement Science and Technology</i>, with <a href="/software/#le-dm">code and data</a>.</span></li>
+        <li><span class="d">Jul 2026</span><span>Invited talk, Faculty of Mechanical Engineering, University of Ljubljana.</span></li>
+        <li><span class="d">May 2026</span><span>Dynamic stall paper accepted in <i>AIAA Journal</i>.</span></li>
+      </ul>
+    </div>
+  </div>
 </section>
 <script src="/assets/js/board.js" defer></script>
 
 </div></main>
 <footer class="site-footer"><div class="wrap">
-  <span>&copy; 2026 Jibu Tom Jose &middot; Faculty of Mechanical Engineering, Technion &ndash; Israel Institute of Technology</span>
-  <span><a href="/about/#contact">Contact</a> &middot; Updated November 2026</span>
+  <div class="cols4">
+    <div><div class="name">Jibu Tom Jose</div>Postdoctoral Research Fellow<br>Faculty of Mechanical Engineering<br>Technion &ndash; Israel Institute of Technology<br>Haifa 3200003, Israel</div>
+    <div><h4>SITE</h4><a href="/research/">Research</a><a href="/publications/">Publications</a><a href="/about/">About</a><a href="/assets/cv/JibuTomJose_CV.pdf">CV (PDF)</a></div>
+    <div><h4>PROFILES</h4><a href="https://scholar.google.com/citations?user=rcawnL4AAAAJ">Google Scholar</a><a href="https://orcid.org/0000-0003-2487-5883">ORCID</a><a href="https://www.linkedin.com/in/jibutomjose/">LinkedIn</a><a href="https://github.com/CmdrRyder">GitHub</a></div>
+  </div>
+  <div class="legal"><span>&copy; 2026 Jibu Tom Jose</span><span>Updated November 2026</span></div>
 </div></footer>
 </body>
 </html>

@@ -132,3 +132,6 @@
 .about-list small{display:block;font-size:14px;color:#5d545a;margin-top:2px}
 .about-list em{display:block;font-size:14px;color:#786c73;margin-top:2px}
 @media (max-width:770px){.about-list li{grid-template-columns:78px minmax(0,1fr);gap:10px}.profile-side{order:-1}}
+
+.about-prose h2:first-child{margin-top:0}
+.about-prose p{font-size:17px;line-height:1.75}

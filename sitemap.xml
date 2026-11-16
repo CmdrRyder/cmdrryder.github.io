@@ -1,2 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://jibutomjose.com/</loc></url><url><loc>https://jibutomjose.com/research/</loc></url><url><loc>https://jibutomjose.com/facilities/</loc></url><url><loc>https://jibutomjose.com/software/</loc></url><url><loc>https://jibutomjose.com/publications/</loc></url><url><loc>https://jibutomjose.com/teaching/</loc></url><url><loc>https://jibutomjose.com/about/</loc></url><url><loc>https://jibutomjose.com/contact/</loc></url><url><loc>https://jibutomjose.com/research/le-dm/</loc></url><url><loc>https://jibutomjose.com/research/moving-bodies/</loc></url><url><loc>https://jibutomjose.com/research/dynamic-stall/</loc></url><url><loc>https://jibutomjose.com/research/shock-flows/</loc></url><url><loc>https://jibutomjose.com/research/monocular-3d-piv/</loc></url><url><loc>https://jibutomjose.com/research/pipe-expansions/</loc></url><url><loc>https://jibutomjose.com/research/protrusions/</loc></url><url><loc>https://jibutomjose.com/research/interfaces/</loc></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://jibutomjose.com/</loc></url>
+  <url><loc>https://jibutomjose.com/about.html</loc></url>
+  <url><loc>https://jibutomjose.com/research.html</loc></url>
+  <url><loc>https://jibutomjose.com/methods.html</loc></url>
+  <url><loc>https://jibutomjose.com/publications.html</loc></url>
+  <url><loc>https://jibutomjose.com/teaching.html</loc></url>
+  <url><loc>https://jibutomjose.com/software.html</loc></url>
+  <url><loc>https://jibutomjose.com/contact.html</loc></url>
+  <url><loc>https://jibutomjose.com/papers/coherent-structure-transport.html</loc></url>
+  <url><loc>https://jibutomjose.com/papers/dynamic-masking.html</loc></url>
+  <url><loc>https://jibutomjose.com/papers/dynamic-stall.html</loc></url>
+  <url><loc>https://jibutomjose.com/papers/interface-shapes.html</loc></url>
+  <url><loc>https://jibutomjose.com/papers/pipe-expansions.html</loc></url>
+  <url><loc>https://jibutomjose.com/papers/protrusions.html</loc></url>
+  <url><loc>https://jibutomjose.com/papers/rising-spheres.html</loc></url>
+  <url><loc>https://jibutomjose.com/papers/shock-wave-propagation.html</loc></url>
+  <url><loc>https://jibutomjose.com/papers/single-camera-3d-piv.html</loc></url>
+</urlset>

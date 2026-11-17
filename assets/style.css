@@ -185,3 +185,6 @@
 .hero-slider .hero-slide.is-active .hero-slide-copy{opacity:1;transition:opacity .9s ease 1s!important}
 .hero-slide-image.fit-right{object-position:right center}
 .hero-slider .hero-slide-image.full-bleed{width:100%}
+.intro-credentials{font:600 12.5px/1.45 var(--sans);letter-spacing:.07em;text-transform:uppercase;color:#7b3352;margin:-4px 0 12px}
+.intro-credentials span{display:block}
+@media(max-width:770px){.intro-credentials{font-size:11px;margin:-2px 0 10px}}

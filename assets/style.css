@@ -155,9 +155,9 @@
 .paper-more{margin-top:48px;padding-top:30px;border-top:1px solid var(--line)}
 .paper-more>h2{font:700 26px/1.2 var(--serif);color:#351726;margin:0 0 18px}
 .paper-more .paper-hero-figure{margin:0 0 26px}
-.paper-video{margin:0 0 26px;background:#0f0b0d;border-radius:12px;padding:10px;box-shadow:var(--shadow)}
-.paper-video video{width:100%;max-height:520px;display:block;margin:auto;border-radius:6px;background:#000}
-.paper-video figcaption{color:#d9cfd3;font-size:13px;margin:9px 4px 2px}
+
+
+
 
 /* Lightbox */
 .lightbox{position:fixed;inset:0;z-index:100;background:rgba(20,10,14,.92);display:none;align-items:center;justify-content:center;padding:56px 64px 70px}
@@ -170,6 +170,12 @@
 .lightbox .lb-prev{left:12px;top:50%;transform:translateY(-50%)}
 .lightbox .lb-next{right:12px;top:50%;transform:translateY(-50%)}
 @media (max-width:760px){.fac-thumbs{grid-template-columns:repeat(3,minmax(0,1fr))}.lightbox{padding:52px 10px 80px}.lightbox p{left:12px;right:12px}.paper-more>h2{font-size:22px}}
-.paper-video{width:fit-content;max-width:100%;margin-left:auto;margin-right:auto}
-.paper-video video{width:auto;max-width:100%;max-height:480px}
-.paper-video figcaption{max-width:640px}
+
+
+
+.paper-more>h2:not(:first-child){margin-top:38px}
+/* videos styled like the figure cards */
+.paper-video{margin:0 0 26px;background:#fff;border:1px solid #e9dcdd;border-radius:13px;padding:20px;box-shadow:var(--shadow)}
+.paper-video video{display:block;margin:auto;width:auto;max-width:100%;max-height:480px;background:transparent}
+.paper-video figcaption{color:#786c73;font-size:12px;margin-top:13px}
+@media(max-width:770px){.paper-video{padding:12px}}

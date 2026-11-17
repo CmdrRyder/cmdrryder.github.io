@@ -183,3 +183,4 @@
 .hero-slider .hero-slide{transition:opacity 1.8s ease-in-out!important}
 .hero-slider .hero-slide .hero-slide-copy{opacity:0;transition:opacity .45s ease!important}
 .hero-slider .hero-slide.is-active .hero-slide-copy{opacity:1;transition:opacity .9s ease 1s!important}
+.hero-slide-image.fit-right{object-position:right center}
